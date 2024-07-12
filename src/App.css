@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+.bigblue {
+  min-Height: 100px;
+  background-Color: darkblue;
+  color: white;
+  border: 3px solid black;
+  position:fixed;
+  bottom:0px;
+  width:100%;
+  padding:1px 0px;
+}
