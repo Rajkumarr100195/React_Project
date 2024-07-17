@@ -11,19 +11,12 @@ function Footer() {
     const options = ['The Godfather', 'Pulp Fiction'];
 
   return (
-<React.Fragment>
-    <CssBaseline />
-    <Container maxWidth={false} disableGutters>
-        <Box sx={{ bgcolor: '#cfe8fc', height: '100px' }}>
 
-
-           <p> Footer</p>
-
-
-       </Box>
-    </Container>
-
-    </React.Fragment>
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+  <div class="container">
+    <span class="text-body-secondary">Place sticky footer content here.</span>
+  </div>
+</footer>
   );
 }
 
