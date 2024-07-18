@@ -12,7 +12,7 @@ function Footer() {
 
   return (
 
-    <footer class="footer mt-auto py-3 bg-body-tertiary">
+    <footer class="footer mt-auto py-3 bg-body-tertiary" style={cardStyles.container}>
   <div class="container">
     <span class="text-body-secondary">Place sticky footer content here.</span>
   </div>
@@ -22,3 +22,15 @@ function Footer() {
 
 export default Footer;
 
+
+const cardStyles = {
+  container: {
+    position: 'fixed',
+    right: '0px',
+    bottom: '0px',
+    width:'100%',
+    zIndex:'2',
+    textAlign:'left',
+  },
+ 
+};

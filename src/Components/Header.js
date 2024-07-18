@@ -12,42 +12,22 @@ function Header() {
     const options = ['The Godfather', 'Pulp Fiction'];
 
   return (
-<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" style={haederStyles.head}>
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">MY TimeSheet</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
+          <Nav className="ms-auto">
+            <NavDropdown title="Profile" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Logout
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav>
+      
         </Navbar.Collapse>
 
-        <Stack style={{display:'none'}} direction="horizontal" gap={2}>
-          <Button as="a" variant="primary">
-          Button as link
-          </Button>
-          <Button as="a" variant="success">
-          Button as link
-          </Button>
-          </Stack>
+
       </Container>
     </Navbar>
   );
@@ -55,3 +35,12 @@ function Header() {
 
 export default Header;
 
+const haederStyles = {
+  head: {
+    position: 'sticky',
+    top: '0px',
+    width:'100%',
+    zIndex:'2'
+  }
+ 
+};

@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import Header from './Header'
 import Footer from './Footer'
 import SideBar from './Sidebar'
+import Visitor from './Visitor'
 
 function Layout(props) {
 
@@ -12,7 +13,10 @@ function Layout(props) {
     <div>
     <Header />
     {props.children}
+    <div style={main.container}>
     <SideBar />
+    <Visitor/>
+    </div>
     <Footer />
     </div>
   );
@@ -20,3 +24,11 @@ function Layout(props) {
 
 export default Layout;
 
+const main = {
+  container: {
+display:'flex',
+padding:"0px 10px"
+
+  },
+ 
+};

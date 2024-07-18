@@ -9,8 +9,8 @@ function SideBar() {
 
 <div style={myComponentStyle}> 
 
+<div style={innermyComponentStyle}><p> side bar</p></div>
 
-<p> side bar</p>
 </div>
   );
 }
@@ -18,10 +18,13 @@ function SideBar() {
 export default SideBar;
 
 const myComponentStyle = {
+  
   color: 'blue',
   lineHeight: 10,
   padding: '1.5em',
-  background:'red',
+  background:'#f6f6f6',
   width:'280px',
   height:'100vh'
 }
+
+innermyComponentStyle
